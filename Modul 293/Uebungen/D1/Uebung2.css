@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+body {
+    margin: 0;
+    background-color: blue; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.color-box {
+    background-color: red; 
+    padding: 175px;
+    border: 100px solid yellow ; 
+    border-radius: 35px; 
+}
+
+.inner-box {
+    background-color: green; 
+    padding: 100px;
+    border-radius: 35px; 
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#Games h2 {
+    font-size: 80px;
+    text-align: left;
+}
+
+#Games ul li {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 10px 0;
+    color: blue;
+}
