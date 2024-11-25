@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Document</title>
-    <style>
-    main {
-        display: flow-root; 
-    }
-
-    article, aside {
-        width: 33.33%; 
-        width: calc(100% / 3); 
-        float: left;
-    }
-    </style> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Produkte</title>
+    <link rel="stylesheet" href="Website.css">
 </head>
 <body>
-    <header>Header</header>
+    <header>
+        <h1>Fake Laden</h1>
+    </header>
+
     <main>
-        <aside>Navigation</aside>
-        <article>Artikel</article>
-        <aside>Kategorien</aside>
+        <section class="product-grid">
+            <div class="product-item">
+                <img src="product1.jpg" alt="Produkt 1">
+                <h2>Rasenmäher</h2>
+                <p>Beschreibung des Rasenmähers.</p>
+                <p>Preis: 49.99€</p>
+            </div>
+
+            <div class="product-item">
+                <img src="product2.jpg" alt="Produkt 2">
+                <h2>IPhone</h2>
+                <p>Beschreibung des IPhones.</p>
+                <p>Preis: 849.00€</p>
+            </div>
+
+            <div class="product-item">
+                <img src="product3.jpg" alt="Produkt 3">
+                <h2>Mig Mac</h2>
+                <p>Beschreibung des Mig Macs.</p>
+                <p>Preis: 5.99€</p>
+            </div>
+
+            <div class="product-item">
+                <img src="product4.jpg" alt="Produkt 4">
+                <h2>Subway Sandwich</h2>
+                <p>Beschreibung des Subway Sandwiches.</p>
+                <p>Preis: 4.99€</p>
+            </div>
+
+            <div class="product-item">
+                <img src="product5.jpg" alt="Produkt 5">
+                <h2>Fernseher</h2>
+                <p>Beschreibung des Fernsehers.</p>
+                <p>Preis: 999.99€</p>
+            </div>
+
+            <div class="product-item">
+                <img src="product6.jpg" alt="Produkt 6">
+                <h2>Laptop</h2>
+                <p>Beschreibung des Laptops.</p>
+                <p>Preis: 799.99€</p>
+            </div>
+        </section>
     </main>
-    <footer>Footer</footer>    
+
+    <footer>
+        <p>&copy; 2024 Fake Laden </p>
+    </footer>
 </body>
 </html>
