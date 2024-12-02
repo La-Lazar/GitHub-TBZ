@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBZ 4</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+        }
+
+        /* Erste Zeile mit "de" und Email */
+        .header-top {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-info a {
+            text-decoration: none;
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* Zweite Zeile mit "Lernende", Logo und blauem Streifen */
+        .subheader {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lernende {
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        .logo-row {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: black;
+            margin-right: 10px;
+        }
+
+        .blue-bar {
+            background: linear-gradient(to right, #fff, #87CEFA);
+            flex-grow: 1;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Menü */
+        .menu {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* Inhalt */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .left, .center, .right {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Erste Zeile: Benutzerinfo -->
+        <div class="header-top">
+            <div class="user-info">
+                <span>de</span>
+                <a href="mailto:lazar.lazic@edu.tbz.ch">lazar.lazic@edu.tbz.ch</a>
+            </div>
+        </div>
+
+        <!-- Zweite Zeile: "Lernende" und Logo mit blauem Streifen -->
+        <div class="subheader">
+            <div class="lernende">Lernende</div>
+            <div class="logo-row">
+                <div class="logo">TBZ</div>
+                <div class="blue-bar"></div>
+            </div>
+        </div>
+
+        <!-- Dritte Zeile: Menü -->
+        <div class="menu">
+            <a href="#">Abwesenheit   |</a>
+            <a href="#">Noten   |</a>
+            <a href="#">Anwesenheit   |</a>
+            <a href="#">Notizen|</a>
+            <a href="#">Diary|</a>
+            <a href="#">Tests</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">HE24</div>
+        <div class="center">Lazic Lazar</div>
+        <div class="right">PE24a</div>
+    </div>
+</body>
+</html>
