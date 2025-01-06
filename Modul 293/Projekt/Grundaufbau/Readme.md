@@ -10,4 +10,17 @@ Zweite seite über die Services :
 
 ![image](https://github.com/user-attachments/assets/5f8bf2bc-ba3a-4e02-89ef-19eb9df396e1)
 
+## Styleguide: 
+
+Logo :
+
+![image](https://github.com/user-attachments/assets/2117ce76-b557-40c2-97f8-169311ff4a58)
+
+
+Farben : 
+
+![image](https://github.com/user-attachments/assets/c55a7321-cdaa-47de-aec0-a86d5f9bb174)
+
+diese werde ich oft benutzen (Main Farbe)
+
 # Dominik :
