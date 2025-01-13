@@ -25,7 +25,7 @@ diese werde ich oft benutzen (Main Farbe)
 
 # Dominik :
 Ich möchte eine Website zur Übersicht von Ski Alpin. Es gibt mehrere Unterseiten, welche Informationen zu den aktuellen Cup Standings, 
-Skirennfahrer und den verschiedenen Disziplinen geben.
+Skirennfahrer und den verschiedenen Disziplinen geben. Es gibt ein Feedbackformular, wo man die Erfahrungen mit der Website teilen kann.
 
 <h2>HomePage:</h2>
 
