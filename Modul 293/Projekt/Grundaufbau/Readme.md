@@ -28,6 +28,7 @@ Ich möchte eine Website zur Übersicht von Ski Alpin. Es gibt mehrere Unterseit
 Skirennfahrer und den verschiedenen Disziplinen geben.
 
 <h2>HomePage:</h2>
+
 ![Homepage](https://github.com/user-attachments/assets/eb9efd7c-4e20-4c05-83a5-a2b83c7d3067)
 
 
