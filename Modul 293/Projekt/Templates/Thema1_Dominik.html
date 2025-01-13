@@ -13,13 +13,14 @@
         }
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; 
             align-items: center;
             padding: 10px 20px;
             border-bottom: 1px solid #000;
         }
         header h1 {
             margin: 0;
+            /* Text links ausrichten */
         }
         .search-container {
             display: flex;
@@ -83,12 +84,16 @@
 <body>
     <header>
         <h1>Thema 1</h1>
+        
         <div class="search-container">
             <input type="text" placeholder="Search">
             <button>🔍</button>
-            <div class="logo-placeholder">Logo</div>
+            <a href="Homepage_Dominik.html">
+                <div class="logo-placeholder">Logo</div>
+            </a>
         </div>
     </header>
+
     <main>
         <div class="cards-container">
             <div class="card">
@@ -109,10 +114,11 @@
             </div>
         </div>
     </main>
+
     <footer>
         <div class="logos">Logos</div>
         <div class="footer-buttons">
-            <button>Feedback Formular</button>
+            <a href="Feedbackformular_Dominik.html"><button>Feedback Formular</button></a>
             <button>Andere Kanäle</button>
             <button>Über mich</button>
         </div>
