@@ -27,37 +27,36 @@ diese werde ich oft benutzen (Main Farbe)
 Ich möchte eine Website zur Übersicht von Ski Alpin. Es gibt mehrere Unterseiten, welche Informationen zu den aktuellen Cup Standings, 
 Skirennfahrer und den verschiedenen Disziplinen geben.
 
-HomePage:
-
+<h2>HomePage:</h2>
 ![Homepage](https://github.com/user-attachments/assets/eb9efd7c-4e20-4c05-83a5-a2b83c7d3067)
 
 
-Thema 1:
+<h2>Thema 1:</h2>
 
 ![Thema1](https://github.com/user-attachments/assets/3256dff9-d757-4219-b3f9-48e19c6435b9)
 
 
-Thema 2:
+<h2>Thema 2:</h2>
 
 ![Thema2](https://github.com/user-attachments/assets/516215d2-7c41-4d45-8f79-dcf5f81a2796)
 
 
-Thema 3:
+<h2>Thema 3:</h2>
 
 ![Thema3](https://github.com/user-attachments/assets/d5d03056-c9e5-44b3-b74c-95ecec53123b)
 
 
-Feedbackformular:
+<h2>Feedbackformular:</h2>
 
-![Feedbackformular]](https://github.com/user-attachments/assets/42e09d21-ce2c-4840-9020-0186ddba7731)
+![Feedbackformular](https://github.com/user-attachments/assets/42e09d21-ce2c-4840-9020-0186ddba7731)
 
 
-Logo:
+<h2>Logo:</h2>
 
 ![Logo](https://github.com/user-attachments/assets/03a6df9d-a221-4e8a-80d5-2a25da36c4fa)
 
 
-Farben:
+<h2>Farben:</h2>
 
 ![Blau](https://github.com/user-attachments/assets/064331d6-f2d5-40e9-b29e-b17a59f0c5f5)
 
