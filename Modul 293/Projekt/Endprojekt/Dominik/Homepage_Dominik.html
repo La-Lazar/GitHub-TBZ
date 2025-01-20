@@ -86,16 +86,6 @@
             line-height: 1.5;
             color: #333;
         }
-        .footer-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .footer-buttons button {
-            padding: 10px;
-            cursor: pointer;
-        }
         .logos {
             margin-top: 20px;
             text-align: center;
@@ -108,6 +98,38 @@
             max-width: 100%;
             height: auto;
             border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-top: 1px solid #000; /* Schwarze Linie oben im Footer */
+        }
+        footer p {
+            color: black; /* Schwarze Schrift für Copyright */
+            font-size: 16px;
+            margin: 0;
+        }
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .footer-buttons button {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .footer-buttons button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -157,7 +179,6 @@
             <div class="image-container">
                 <img src="Podest.jpg" alt="Podest">
             </div>
-                
             </div>
             <div class="basic-info">
                 <h2><a href="Thema3_Dominik.html">Swiss Ski Team</a></h2>
@@ -174,12 +195,12 @@
         </div>
     </main>
     <footer>
-        <div class="logos">Logos</div>
         <div class="footer-buttons">
             <a href="Feedbackformular_Dominik.html"><button>Feedback Formular</button></a>
             <a href="Andere Kanäle_Dominik.html"><button>Andere Kanäle</button></a>
             <a href="Über Mich_Dominik.html"><button>Über mich</button></a>
         </div>
+        <p>&copy; 2025 Yalla. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>

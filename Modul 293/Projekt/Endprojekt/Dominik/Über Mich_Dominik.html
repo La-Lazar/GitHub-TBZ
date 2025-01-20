@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            color: black; /* Schwarze Schriftfarbe für den gesamten Text */
         }
         header {
             display: flex;
@@ -20,6 +21,7 @@
         }
         header h1 {
             margin: 0;
+            color: black; /* Schwarze Schriftfarbe für den Header */
         }
         .search-container {
             display: flex;
@@ -49,6 +51,8 @@
         }
         .bio-section h2 {
             margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
         }
         .bio-section p {
             font-size: 16px;
@@ -57,16 +61,32 @@
         footer {
             margin-top: 20px;
             text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ccc;
+        }
+        footer p {
+            color: #1E90FF; /* Blaue Schrift für Copyright */
+            font-size: 16px;
+            margin: 0;
         }
         .footer-buttons {
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin-top: 20px;
+            margin-top: 15px;
         }
         .footer-buttons button {
             padding: 10px;
             cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .footer-buttons button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -83,19 +103,21 @@
     </header>
     <main>
         <div class="bio-section">
-            <h2>Über mich</h2>
-            <p>Hallo! Mein Name ist Dominik, und ich bin ein begeisterter Entwickler mit einer Leidenschaft für Webtechnologien. In den letzten Jahren habe ich mich intensiv mit HTML, CSS, JavaScript und modernen Frameworks beschäftigt, um ansprechende und funktionale Websites zu erstellen.</p>
+            <h2>Hallo, ich bin Dominik!</h2>
+            <p>Ich bin ein leidenschaftlicher Entwickler mit einem Fokus auf Webtechnologien. Ich habe viel Erfahrung mit HTML, CSS, JavaScript und modernen Frameworks, und liebe es, interaktive und benutzerfreundliche Webseiten zu erstellen.</p>
 
-            <p>Meine Hobbys umfassen das Programmieren, das Erkunden neuer Technologien und das Lösen komplexer Probleme. Ich strebe danach, mich ständig weiterzuentwickeln und neue Fähigkeiten zu erlernen, um in der Welt der Softwareentwicklung erfolgreich zu sein.</p>
+            <p>In meiner Freizeit beschäftige ich mich gerne mit neuen Technologien und versuche, mich ständig weiterzubilden. Ich bin immer auf der Suche nach neuen Herausforderungen, die mir helfen, meine Fähigkeiten weiter zu entwickeln.</p>
+
+            <p>Meine Leidenschaft für das Programmieren geht über das Entwickeln von Webseiten hinaus. Ich genieße es, an Open-Source-Projekten zu arbeiten und meine Erfahrungen mit der Entwicklergemeinschaft zu teilen.</p>
         </div>
     </main>
     <footer>
-        <div class="logos">Logos</div>
         <div class="footer-buttons">
             <a href="Feedbackformular_Dominik.html"><button>Feedback Formular</button></a>
             <a href="Andere Kanäle_Dominik.html"><button>Andere Kanäle</button></a>
             <a href="Über Mich_Dominik.html"><button>Über mich</button></a>
         </div>
+        <p>&copy; 2025 Yalla. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
