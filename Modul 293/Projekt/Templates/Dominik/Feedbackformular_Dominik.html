@@ -99,14 +99,12 @@
     </style>
     <script>
         function validateAndSubmit(event) {
-            event.preventDefault(); // Verhindert das Standard-Formularverhalten
+            event.preventDefault(); 
 
-            // Felder abrufen
             const name = document.getElementById("name").value.trim();
             const email = document.getElementById("email").value.trim();
             const feedback = document.getElementById("feedback").value.trim();
 
-            // Validierung
             if (!name || !email || !feedback) {
                 alert("Bitte füllen Sie alle Felder aus.");
                 return;
@@ -117,7 +115,6 @@
                 return;
             }
 
-            // Erfolgsmeldung und Formular zurücksetzen
             alert("Vielen Dank für Ihr Feedback!");
             document.getElementById("feedbackForm").reset();
         }
