@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ski Alpin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #000;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;  
+            gap: 10px;
+            width: 100%;  
+        }
+        .nav-buttons button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-container input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 50px;
+            font-size: 12px;
+            border: 1px solid #000;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .basic-info {
+            width: 30%;
+            height: 250px;
+            border: 1px solid #000;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .basic-info h2 {
+            margin: 0;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .basic-info h2 a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .footer-buttons button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .logos {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ski_Alpin</h1>
+        <div class="nav-buttons">
+            <a href="Thema1_Dominik.html"><button>Thema 1</button></a>
+            <a href="Thema2_Dominik.html"><button>Thema 2</button></a>
+            <a href="Thema3_Dominik.html"><button>Thema 3</button></a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+            <div class="logo-placeholder">Logo</div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="basic-info">
+                <h2><a href="Thema1_Dominik.html">Thema 1</a></h2>
+            </div>
+            <div class="basic-info">
+                <h2><a href="Thema2_Dominik.html">Thema 2</a></h2>
+            </div>
+            <div class="basic-info">
+                <h2><a href="Thema3_Dominik.html">Thema 3</a></h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="logos">Logos</div>
+        <div class="footer-buttons">
+            <a href="Feedbackformular_Dominik.html"><button>Feedback Formular</button></a>
+            <button>Andere Kanäle</button>
+            <button>Über mich</button>
+        </div>
+    </footer>
+</body>
+</html>
