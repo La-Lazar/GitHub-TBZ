@@ -20,6 +20,7 @@
         }
         header h1 {
             margin: 0;
+            text-transform: uppercase; /* Header-Text wird großgeschrieben */
         }
         .search-container {
             display: flex;
@@ -39,6 +40,11 @@
             font-size: 12px;
             border: 1px solid #000;
         }
+        .logo-image {
+            width: 50px; /* Logo-Größe auf 50px gesetzt */
+            height: 50px;
+            object-fit: contain;
+        }
         main {
             padding: 20px;
             display: flex;
@@ -49,14 +55,14 @@
             max-width: 600px;
             margin: 0 auto;
             background-color: #f9f9f9;
-            padding: 30px; /* Mehr Padding für luftigen Raum */
+            padding: 30px; /* Mehr Padding für Luftigkeit */
             border-radius: 10px;
             border: 1px solid #000;
             box-sizing: border-box;
         }
         label {
             font-size: 16px;
-            margin-bottom: 8px; /* Etwas mehr Abstand */
+            margin-bottom: 8px;
         }
         input[type="text"], textarea {
             width: 100%;
@@ -64,7 +70,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 14px;
-            margin-bottom: 20px; /* Mehr Abstand zwischen den Feldern */
+            margin-bottom: 20px;
             box-sizing: border-box;
         }
         textarea {
@@ -97,7 +103,7 @@
             border-top: 1px solid #ccc;
         }
         footer p {
-            color: #1E90FF; /* Blaue Schrift */
+            color: #000;
             font-size: 16px;
             margin: 0;
         }
@@ -123,12 +129,13 @@
 </head>
 <body>
     <header>
-        <h1>Feedbackformular</h1>
+        <h1>FEEDBACKFORMULAR</h1> <!-- Header-Text großgeschrieben -->
         <div class="search-container">
             <input type="text" placeholder="Suchen">
             <button>🔍</button>
             <a href="Homepage_Dominik.html">
-                <div class="logo-placeholder">Logo</div>
+                <!-- Bild-Logo eingebaut -->
+                <img src="logo.png" alt="Logo" class="logo-image">
             </a>
         </div>
     </header>
@@ -156,7 +163,7 @@
             <a href="Andere Kanäle_Dominik.html"><button>Andere Kanäle</button></a>
             <a href="Über Mich_Dominik.html"><button>Über mich</button></a>
         </div>
-        <p>&copy; 2025 Yalla. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2025 Snow Horizon. Alle Rechte vorbehalten.</p>
     </footer>
 
     <script>
