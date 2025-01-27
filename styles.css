@@ -1,0 +1,183 @@
+/* Basis-Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003366; /* Dunkelblau */
+    color: white;
+    position: relative;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    height: 100px; /* Erhöhte Größe */
+    border-radius: 10px; /* Leicht abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.08); /* Leichte Vergrößerung beim Hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Schatten verstärken */
+  }
+  
+  .extra-options a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .extra-options a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Burger-Menü */
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    padding: 10px 0;
+  }
+  
+  .nav-links a {
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Hero-Bereich */
+  .hero {
+    text-align: center;
+    background: linear-gradient(to bottom, #003366, #0066cc); /* Verlauf */
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #003366;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Info-Sektion */
+  .info {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .info-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .info-grid img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .info-grid h3 {
+    color: #003366;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+  
+    .burger-menu {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #003366;
+      padding: 10px 0;
+    }
+  
+    nav a {
+      padding: 10px 20px;
+      text-align: center;
+    }
+  }
+  

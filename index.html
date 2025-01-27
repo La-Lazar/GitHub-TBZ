@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login - SKF Plantagen</title>
+  <script>
+    // Automatische Weiterleitung nach Klick auf den Login-Button
+    function handleLogin(event) {
+      event.preventDefault(); // Verhindert das Standardverhalten des Formulars
+      window.location.href = "Hauptseite.html"; // Leitet zur Hauptseite weiter
+    }
+  </script>
+</head>
+<body>
+  <header class="main-header">
+    <h1>SKF Plantagen</h1>
+  </header>
+
+  <main class="login-container">
+    <form onsubmit="handleLogin(event)">
+      <h2>Willkommen bei SKF Plantagen</h2>
+      <label for="username">Benutzername:</label>
+      <input type="text" id="username" name="username" placeholder="Benutzername" required>
+
+      <label for="password">Passwort:</label>
+      <input type="password" id="password" name="password" placeholder="Passwort" required>
+
+      <button type="submit">Einloggen</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SKF Plantagen. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>

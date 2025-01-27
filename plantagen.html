@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Plantagen - SKF</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-container">
+        <img src="LogoSKF.pdf.png" alt="SKF Logo" class="logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Hauptseite.html">Startseite</a></li>
+        <li><a href="plantagen.html">Plantagen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div class="burger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Unsere Plantagen</h1>
+      <p>Ein Einblick in die Nachhaltigkeit und Effizienz unserer Arbeit.</p>
+    </section>
+
+    <section class="info">
+      <div class="info-grid">
+        <div>
+          <img src="images/plantation1.jpg" alt="Plantage 1">
+          <h3>Unsere Vision</h3>
+          <p>SKF setzt sich für nachhaltige und umweltfreundliche Landwirtschaft ein. Unsere Plantagen stehen für Innovation und Qualität.</p>
+        </div>
+        <div>
+          <img src="images/plantation2.jpg" alt="Plantage 2">
+          <h3>Lokale Partnerschaften</h3>
+          <p>Wir arbeiten eng mit lokalen Gemeinden zusammen, um faire Arbeitsbedingungen zu schaffen und die Umwelt zu schützen.</p>
+        </div>
+        <div>
+          <img src="images/plantation3.jpg" alt="Plantage 3">
+          <h3>Nachhaltige Produktion</h3>
+          <p>Unsere Plantagen sind Vorreiter in der Nutzung moderner Technologien, um Ressourcen effizient zu nutzen und hochwertige Produkte anzubieten.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="additional-info">
+      <h2>Unsere Werte</h2>
+      <p>Bei SKF Plantagen legen wir großen Wert auf Nachhaltigkeit, soziale Verantwortung und Transparenz. Wir engagieren uns aktiv für die Rechte der Arbeiter und die Schonung der Umwelt.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SKF Plantagen. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>
+    // Funktion für den Burger-Menü-Button
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-links');
+      nav.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
