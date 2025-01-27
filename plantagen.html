@@ -8,21 +8,19 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="logo-container">
-        <img src="LogoSKF.pdf.png" alt="SKF Logo" class="logo">
+    <img src="LogoSKF.pdf.png" alt="SKF Logo" class="logo">
+    <div class="burger-menu" id="burgerMenu">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="Hauptseite.html">Startseite</a></li>
-        <li><a href="plantagen.html">Plantagen</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-      <div class="burger-menu" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="Hauptseite.html">Start</a>
+      <a href="plantagen.html">Plantagen</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
     </nav>
+    <div class="extra-options">
+    </div>
   </header>
 
   <main>
@@ -34,17 +32,17 @@
     <section class="info">
       <div class="info-grid">
         <div>
-          <img src="images/plantation1.jpg" alt="Plantage 1">
+          <img src="Plantagen(3).png" alt="Plantage 1">
           <h3>Unsere Vision</h3>
           <p>SKF setzt sich für nachhaltige und umweltfreundliche Landwirtschaft ein. Unsere Plantagen stehen für Innovation und Qualität.</p>
         </div>
         <div>
-          <img src="images/plantation2.jpg" alt="Plantage 2">
+          <img src="Plantagen(2).png" alt="Plantage 2">
           <h3>Lokale Partnerschaften</h3>
           <p>Wir arbeiten eng mit lokalen Gemeinden zusammen, um faire Arbeitsbedingungen zu schaffen und die Umwelt zu schützen.</p>
         </div>
         <div>
-          <img src="images/plantation3.jpg" alt="Plantage 3">
+          <img src="Plantagen(1).png" alt="Plantage 3">
           <h3>Nachhaltige Produktion</h3>
           <p>Unsere Plantagen sind Vorreiter in der Nutzung moderner Technologien, um Ressourcen effizient zu nutzen und hochwertige Produkte anzubieten.</p>
         </div>
@@ -62,7 +60,6 @@
   </footer>
 
   <script>
-    // Funktion für den Burger-Menü-Button
     function toggleMenu() {
       const nav = document.querySelector('.nav-links');
       nav.classList.toggle('open');

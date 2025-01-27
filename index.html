@@ -6,16 +6,22 @@
   <link rel="stylesheet" href="styles.css">
   <title>Login - SKF Plantagen</title>
   <script>
-    // Automatische Weiterleitung nach Klick auf den Login-Button
-    function handleLogin(event) {
-      event.preventDefault(); // Verhindert das Standardverhalten des Formulars
-      window.location.href = "Hauptseite.html"; // Leitet zur Hauptseite weiter
+    function handleLogin(event)
+    {
+      event.preventDefault();
+      window.location.href = "Hauptseite.html";
     }
   </script>
 </head>
 <body>
+
   <header class="main-header">
-    <h1>SKF Plantagen</h1>
+    <img src="LogoSKF.pdf.png" alt="SKF Logo" class="logo">
+    <nav class="nav-links">
+      <a href="Hauptseite.html">Start</a>
+      <a href="plantagen.html">Plantagen</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
   </header>
 
   <main class="login-container">

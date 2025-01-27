@@ -35,17 +35,16 @@ body {
     text-decoration: underline;
   }
   
-  /* Logo Styling */
   .logo {
-    height: 100px; /* Erhöhte Größe */
-    border-radius: 10px; /* Leicht abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .logo:hover {
-    transform: scale(1.08); /* Leichte Vergrößerung beim Hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Schatten verstärken */
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
   .extra-options a {
@@ -58,7 +57,6 @@ body {
     text-decoration: underline;
   }
   
-  /* Burger-Menü */
   .burger-menu {
     display: none;
     flex-direction: column;
@@ -94,10 +92,9 @@ body {
     color: white;
   }
   
-  /* Hero-Bereich */
   .hero {
     text-align: center;
-    background: linear-gradient(to bottom, #003366, #0066cc); /* Verlauf */
+    background: linear-gradient(to bottom, #003366, #0066cc);
     color: white;
     padding: 50px 20px;
   }
@@ -120,7 +117,6 @@ body {
     background-color: #f1f1f1;
   }
   
-  /* Info-Sektion */
   .info {
     padding: 20px;
     background-color: #f9f9f9;
@@ -142,7 +138,6 @@ body {
     color: #003366;
   }
   
-  /* Footer */
   footer {
     text-align: center;
     margin-top: 20px;
@@ -150,7 +145,6 @@ body {
     font-size: 0.9rem;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     nav {
       display: none;
