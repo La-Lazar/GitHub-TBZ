@@ -27,7 +27,7 @@ Im logischen Datenmodell werden Netzwerk-Beziehungen oft als **Relationen** in e
 - **1:N-Beziehung** → Fremdschlüssel auf der „N“-Seite der Beziehung.  
 - **M:N-Beziehung** → Eine zusätzliche **Zwischentabelle** mit Fremdschlüsseln beider Tabellen wird benötigt.
 
-Im gezeigten Bild sieht man eine **1:N-Beziehung** zwischen `Person` und `Kleidungsstück`, dargestellt durch eine Verbindungslinie mit „1“ auf der einen Seite und „∞“ (unendlich) auf der anderen.
+Im gezeigten Bild sieht man eine **1:N-Beziehung** zwischen `Person` und `Kleidungsstück`, dargestellt durch eine Verbindungslinie mit „1“ auf der einen Seite und „∞“ (unendlich) auf der anderen.4
 
 ---
 
@@ -84,4 +84,37 @@ Das gezeigte Bild stellt eine **relationale Tabelle** dar. Die Begriffe lauten:
 5. **Fremdschlüssel (Abteilungskürzel)** – Verweis auf eine andere Tabelle, um Beziehungen herzustellen.
 
 Diese Struktur entspricht einer **relationalen Datenbank** mit normalisierten Tabellen.
+
+# Aufgabe 2
+
+## 1. Arten von Datenmodellen
+- **Konzeptionelles Datenmodell**:  
+  - Implementierungsunabhängig  
+  - Reine Fachlichkeit  
+  - Direkt aus Anforderungen entwickelt  
+
+- **Logisches Datenmodell**:  
+  - Abbildung des konzeptionellen Modells auf ein Datenbanksystem  
+  - Relationales Modell, etc.  
+
+- **Physisches Datenmodell**:  
+  - Erweiterung des logischen Modells um technische Aspekte  
+  - Indizes, Partitionierung, etc.  
+
+## 2. Modellierungsmethoden und Anwendungsbereiche
+- **3. Normalform (3NF)**:  
+  - Hauptsächlich in operativen Systemen (z. B. ERP)  
+  - Core DWH / Enterprise DWH  
+  - Anwendungsfreie Speicherung der Daten  
+
+- **Star Schema**:  
+  - Optimiert für Auswertungssysteme  
+  - Nutzung im Reporting Layer (Data Mart) eines Data Warehouses  
+
+- **Data Vault Modellierung**:  
+  - Moderne, erweiterbare Modellierung  
+  - Fokus auf Automatisierung der Beladeprozesse  
+  - Hauptsächlich im Core DWH / Integration Layer  
+
+
 
