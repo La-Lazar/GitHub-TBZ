@@ -116,5 +116,91 @@ Diese Struktur entspricht einer **relationalen Datenbank** mit normalisierten Ta
   - Fokus auf Automatisierung der Beladeprozesse  
   - Hauptsächlich im Core DWH / Integration Layer  
 
+## ERM Model
+
+![image](https://github.com/user-attachments/assets/b9d7b4e1-69c2-4fc5-8371-14c4063efdc1)
+
+## Generalsierung und Spezialisierung
+
+![image](https://github.com/user-attachments/assets/87ad1f0e-4d73-42c5-b65f-3983911b98d5)
 
 
+## Identifying Relationship
+
+![image](https://github.com/user-attachments/assets/da96d43b-ee3d-4d5c-926e-44073bdc8494)
+ 
+# **Datenbankmanagementsystem (DBMS) – Zusammenfassung**  
+
+## **Was ist ein DBMS?**  
+Ein **Datenbanksystem (DBS)** dient der Verwaltung großer Datenmengen. Es besteht aus:  
+1. **Datenbankmanagementsystem (DBMS)** – Die Verwaltungssoftware  
+2. **Datenbank (DB)** – Die gespeicherten Daten  
+
+Das **DBMS** organisiert die Speicherung und den Zugriff auf Daten und stellt eine Datenbanksprache zur Verfügung.  
+
+## **Merkmale eines DBMS**  
+- **Zentrale Datenverwaltung**: Verhindert doppelte Datenspeicherung und ermöglicht effiziente Verknüpfungen.  
+- **Datenbanksprache**: Besteht aus mehreren Teilen:  
+  - **DQL** (Data Query Language) → `SELECT` (Abfragen)  
+  - **DDL** (Data Definition Language) → `CREATE` (Strukturverwaltung)  
+  - **DML** (Data Manipulation Language) → `INSERT` (Datenbearbeitung)  
+  - **DCL** (Data Control Language) → `GRANT` (Zugriffsrechte)  
+  - **TCL** (Transaction Control Language) → `COMMIT` (Transaktionen)  
+- **Benutzersichten**: Unterschiedliche Nutzer sehen verschiedene Datenbereiche.  
+- **Konsistenzkontrolle**: Stellt sicher, dass die Daten korrekt und widerspruchsfrei bleiben.  
+- **Datenzugriffskontrolle**: Verhindert unautorisierte Zugriffe.  
+- **Transaktionen**: Mehrere zusammengehörige Änderungen werden als eine Einheit behandelt.  
+- **Mehrbenutzerfähigkeit**: Gleichzeitiger Zugriff mehrerer Nutzer wird synchronisiert.  
+- **Datensicherung**: Schutz vor Datenverlust bei Hardware- oder Softwarefehlern.  
+
+## **Vorteile eines DBMS**  
+- **Standardisierung** von Datenstrukturen und Formaten.  
+- **Effizienter Datenzugriff** durch optimierte Speichertechniken.  
+- **Schnellere Softwareentwicklung** durch vorhandene Funktionen.  
+- **Hohe Flexibilität** durch einfache Anpassung der Datenstruktur.  
+- **Hohe Verfügbarkeit** für Anwendungen mit vielen Nutzern (z. B. Online-Banking).  
+- **Kosteneffizienz** durch zentrale Verwaltung statt isolierter Systeme.  
+
+## **Nachteile eines DBMS**  
+- **Hohe Anfangsinvestitionen** für Software und Hardware.  
+- **Weniger effizient für Spezialanwendungen**, da es als Allzwecklösung dient.  
+- **Erhöhter Verwaltungsaufwand** für Datensicherheit und Konsistenzkontrolle.  
+- **Hochqualifiziertes Personal erforderlich** (Datenbankadministratoren).  
+- **Zentrale Speicherung macht das System anfälliger** für Ausfälle (Lösung: verteilte Systeme).  
+
+## **Wann sind reguläre Dateien besser als ein DBMS?**  
+- Wenn **kein Mehrbenutzerzugriff** benötigt wird.  
+- Bei **festen Echtzeitanforderungen**, die ein DBMS nicht einhalten kann.  
+- Wenn die **Daten einfach und stabil** sind und sich nicht verändern.  
+
+## **Bekannte DBMS-Produkte**  
+| **DBMS**          | **Hersteller**  | **Modell**           |  
+|-------------------|---------------|----------------------|  
+| **MySQL**        | MySQL AB       | Relational           |  
+| **PostgreSQL**   | –             | Objektrelational     |  
+| **Oracle**       | ORACLE        | Objektrelational     |  
+| **MS SQL Server**| Microsoft     | Objektrelational     |  
+| **MS Access**    | Microsoft     | Relational (Desktop) |  
+| **DB2**          | IBM           | Objektrelational     |  
+| **Firebird**     | –             | Relational           |  
+| **Sybase ASE**   | Sybase        | Relational           |  
+| **Teradata**     | NCR Teradata  | Relational (Data Warehouses) |  
+
+## Hier sind noch die belibtesten DBMS-Produkte im jetzigen Monat
+- **Oracle**
+- **MySQL**
+- **Microsoft SQL Server**
+- **PostgreSQL**
+- **MongoDB**
+
+## Die 10 Besten DBMS-Produkte 
+- **Oracle**
+- **MySQL**
+- **Microsoft SQL Server**
+- **PostgreSQL**
+- **MongoDB**
+- **Redis**
+- **Elasticsearch**
+- **IBM Db2**
+- **SQLite**
+- **MariaDB**
