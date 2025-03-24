@@ -223,3 +223,47 @@ Das **DBMS** organisiert die Speicherung und den Zugriff auf Daten und stellt ei
 | Zeitstempel                        | TIMESTAMP                | TIMESTAMP → '2025-03-03 12:00:00' | Automatische Aktualisierung möglich (z. B. `DEFAULT CURRENT_TIMESTAMP`) |
 | Binäre Datenobjekte variabler Länge (z.B. Bild) | BLOB, LONGBLOB | BLOB → Binärdaten | Speicherung von Bildern, Dateien oder anderen binären Objekten |
 | Verbund                            | JSON                     | JSON → '{"name": "Max"}' | Speicherung strukturierter JSON-Daten |
+
+
+# Mehrfachbeziehungen in Datenbanken
+
+Bei **Mehrfachbeziehungen** geht es darum, dass zwei Tabellen miteinander mehrere, **unabhängige Beziehungen** haben. Jede dieser Beziehungen stellt einen unterschiedlichen Sachverhalt dar.
+
+### Wichtige Punkte:
+
+- **Unabhängige Beziehungen**: Die Beziehungen zwischen den Tabellen sind voneinander getrennt und repräsentieren verschiedene Konzepte.
+- **Aussagekräftige Beschriftung (Rolle)**: Jede Beziehung muss klar gekennzeichnet werden, damit wir wissen, welche Art von Verbindung zwischen den Tabellen besteht.
+- **Unterschiedliche Kardinalitäten**: Jede Beziehung kann unterschiedliche **Kardinalitäten** (also wie viele Datensätze miteinander verbunden sind) haben.
+
+### Beispiel:
+
+Angenommen, wir haben die Tabellen:
+
+- **tbl_Fahrten**: Enthält Informationen über Touren.
+- **tbl_Orte**: Enthält Orte, die besucht werden können.
+
+Es gibt nun mehrere Beziehungen zwischen diesen Tabellen. Eine dieser Beziehungen könnte die Orte sein, die auf einer Tour angefahren werden können. Diese Beziehung ist eine **viele-zu-viele** (m:n) Beziehung, was bedeutet:
+
+- Eine Fahrt kann viele Orte haben.
+- Ein Ort kann auf vielen Fahrten vorkommen.
+
+### Lösung: Zwischentabelle
+
+Da es eine **viele-zu-viele** Beziehung ist, benötigen wir eine **Transformationstabelle** (oder Zwischentabelle), um die Verbindung zwischen den Fahrten und den Orten zu speichern.
+
+Die **Transformationstabelle** könnte wie folgt aussehen:
+
+| fahrt_id | ort_id |
+|----------|--------|
+| 1        | 3      |
+| 1        | 5      |
+| 2        | 2      |
+| 3        | 5      |
+
+Diese Tabelle speichert, welche Orte mit welchen Fahrten verbunden sind.
+
+### Zusammenfassung:
+- **Mehrfachbeziehungen** entstehen, wenn es mehrere, unabhängige Verbindungen zwischen zwei Tabellen gibt.
+- Diese Beziehungen können **viele-zu-viele** sein und erfordern eine **Zwischentabelle**, um sie korrekt darzustellen.
+
+
