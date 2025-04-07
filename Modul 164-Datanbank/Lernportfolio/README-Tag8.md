@@ -65,8 +65,18 @@ WHERE f.Beschreibung IN ('Chor', 'Elektronik');
 
 ### ERD Steurdaten
 
-![image](https://github.com/user-attachments/assets/3bb1b16c-dced-44f3-81bb-6479d971b52e)
+ERD sollte so aussehen:
 
+stichtag int,
+sort int,
+cd varchar(5),
+quarlang varchar(255),
+tarifsort int,
+tarifcd varchar(5),
+tariflang varchar(255),
+SteuerEinkommen_p50 decimal(5,2),
+SteuerEinkommen_p25 decimal(5,2),
+SteuerEinkommen_p75 decimal(5,2)
 
 ### Daten Bulkimport
 
