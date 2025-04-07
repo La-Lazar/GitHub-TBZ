@@ -70,83 +70,43 @@ WHERE f.Beschreibung IN ('Chor', 'Elektronik');
 
 ### Daten Bulkimport
 
-LOAD DATA LOCAL INFILE 'C:/normalized_quartier.csv'
-INTO TABLE Quartier
-FIELDS TERMINATED BY ';'
+LOAD DATA LOCAL INFILE 'C:/steuerdaten.csv'
+INTO TABLE steuern
+FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
- 
-LOAD DATA LOCAL INFILE 'C:/normalized_steuertarif.csv'
-INTO TABLE Steuertarif
-FIELDS TERMINATED BY ';'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
- 
-LOAD DATA LOCAL INFILE 'C:/normalized_jahresdaten.csv'
-INTO TABLE Jahresdaten
-FIELDS TERMINATED BY ';'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
+IGNORE 1 ROWS
+(stichtag, sort, cd, quarlang, tarifsort, tarifcd, tariflang, SteuerEinkommen_p50, SteuerEinkommen_p25, SteuerEinkommen_p75);
 
 ### Daten erstellen
 
 -- Datenbank erstellen und verwenden
 
-CREATE DATABASE IF NOT EXISTS Steuerdaten;
-
-USE Steuerdaten;
+CREATE DATABASE steuern;
+USE steuern;
  
--- Tabelle Quartier
-
-CREATE TABLE Quartier (
-
-    QuartierID INT PRIMARY KEY,
-
-    Name VARCHAR(100) NOT NULL,
-
-    Region VARCHAR(100)  -- optional, falls weitere regionale Angaben erwünscht
-
-);
+create table steuern (
  
--- Tabelle Steuertarif
-
-CREATE TABLE Steuertarif (
-
-    TarifID INT PRIMARY KEY,
-
-    Beschreibung VARCHAR(100) NOT NULL,
-
-    Grundtarif DECIMAL(10,2),
-
-    Spitzensteuersatz DECIMAL(5,2)
-
-);
+stichtag int,
  
--- Tabelle Jahresdaten
-
--- Hier nehmen wir an, dass es pro Jahr und Quartier genau einen Datensatz gibt.
-
-CREATE TABLE Jahresdaten (
-
-    Jahr INT NOT NULL,
-
-    QuartierID INT NOT NULL,
-
-    TarifID INT NOT NULL,
-
-    Einkommen DECIMAL(15,2),
-
-    Steuerbetrag DECIMAL(15,2),
-
-    PRIMARY KEY (Jahr, QuartierID),
-
-    FOREIGN KEY (QuartierID) REFERENCES Quartier(QuartierID),
-
-    FOREIGN KEY (TarifID) REFERENCES Steuertarif(TarifID)
-
+sort int,
+ 
+cd varchar(5),
+ 
+quarlang varchar(255),
+ 
+tarifsort int,
+ 
+tarifcd varchar(5),
+ 
+tariflang varchar(255),
+ 
+SteuerEinkommen_p50 decimal(5,2),
+ 
+SteuerEinkommen_p25 decimal(5,2),
+ 
+SteuerEinkommen_p75 decimal(5,2)
 );
 
- 
 ### Aufgabe 4
 
 ### Analyse der Felder _p25, _p50, _p75
@@ -161,45 +121,34 @@ In meiner Arbeit mit den importierten Excel-Daten und dem zugehörigen SQL-Skrip
 
  ### Aufgabe 5
 
- ### a) Quartier mit maximalem Steuereinkommen für _p75
- 
-Ich verbinde die Tabelle mit den Jahresdaten, in der unter anderem das Feld **_p75** abgelegt ist, mit der Tabelle **Quartier**. Anschließend sortiere ich nach dem Feld **_p75** absteigend und wähle das oberste Ergebnis aus:
- 
-```
-SELECT q.Name AS Quartier, j._p75 AS Steuereinkommen_p75
-FROM Jahresdaten j
-JOIN Quartier q ON j.QuartierID = q.QuartierID
-ORDER BY j._p75 DESC
+ ```
+SELECT quarlang AS Quartier, tariflang AS Tarif, SteuerEinkommen_p75
+FROM steuern
+WHERE SteuerEinkommen_p75 IS NOT NULL
+ORDER BY SteuerEinkommen_p75 DESC
 LIMIT 1;
 ```
  
----
- 
-### b) Quartier mit dem niedrigsten Steuereinkommen für _p50
- 
-Hier sortiere ich die Jahresdaten anhand des Feldes **_p50** in aufsteigender Reihenfolge, sodass das Quartier mit dem geringsten Steuereinkommen oben erscheint:
+**b.    Welches Quartier hat das niedrigste Steuereinkommen für _p50?**
  
 ```
-SELECT q.Name AS Quartier, j._p50 AS Steuereinkommen_p50
-FROM Jahresdaten j
-JOIN Quartier q ON j.QuartierID = q.QuartierID
-ORDER BY j._p50 ASC
+SELECT quarlang AS Quartier, tariflang AS Tarif, SteuerEinkommen_p50
+FROM steuern
+WHERE SteuerEinkommen_p50 IS NOT NULL
+ORDER BY SteuerEinkommen_p50 ASC
 LIMIT 1;
 ```
  
----
- 
-### c) Quartier mit dem höchsten Steuereinkommen für _p50
- 
-Um das Quartier mit dem höchsten Wert im Feld **_p50** zu ermitteln, sortiere ich in absteigender Reihenfolge:
+**c.    Welches Quartier hat das höchste Steuereinkommen für _p50?**
  
 ```
-SELECT q.Name AS Quartier, j._p50 AS Steuereinkommen_p50
-FROM Jahresdaten j
-JOIN Quartier q ON j.QuartierID = q.QuartierID
-ORDER BY j._p50 DESC
+SELECT quarlang AS Quartier, tariflang AS Tarif, SteuerEinkommen_p50
+FROM steuern
+WHERE SteuerEinkommen_p50 IS NOT NULL
+ORDER BY SteuerEinkommen_p50 DESC
 LIMIT 1;
 ```
+ 
 
 
  ### Aufgabe 6
