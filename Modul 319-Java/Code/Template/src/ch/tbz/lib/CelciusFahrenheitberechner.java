@@ -8,7 +8,7 @@ public class CelciusFahrenheitberechner {
 
         String wasRechnen;
         int grad;
-        double resultat;  // Ergebnis kann Nachkommastellen haben, daher double
+        double resultat;
 
         wasRechnen = inputString("Gib C oder F ein:");
         grad = inputInt("Wieviel Grad hast du?");
