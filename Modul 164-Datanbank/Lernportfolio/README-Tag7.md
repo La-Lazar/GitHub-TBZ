@@ -1,4 +1,4 @@
-Datenbanken sind ein zentraler Bestandteil der Geschäftstätigkeit von Unternehmen und Websites, da sie kritische Informationen wie Kundendaten speichern. Die Sicherheit und Verfügbarkeit dieser Daten sind entscheidend, insbesondere in Bezug auf Schutz vor externen Angriffen und internen Problemen wie Hardwaredefekten oder Benutzerfehlern.
+deDatenbanken sind ein zentraler Bestandteil der Geschäftstätigkeit von Unternehmen und Websites, da sie kritische Informationen wie Kundendaten speichern. Die Sicherheit und Verfügbarkeit dieser Daten sind entscheidend, insbesondere in Bezug auf Schutz vor externen Angriffen und internen Problemen wie Hardwaredefekten oder Benutzerfehlern.
 
 Um einem Datenverlust vorzubeugen, sollten regelmäßige Backup-Prozesse durchgeführt werden. Es existieren verschiedene Backup-Methode, wie vollständige, inkrementelle und differenziale Backups, die je nach Anforderungen des Nutzers am besten geeignet sind.
 
@@ -13,7 +13,8 @@ Diese Maßnahmen garantieren eine langfristige Datensicherheit und sorgen für e
 
 #### Daten normalisieren
 
-![image](https://github.com/user-attachments/assets/8a224bba-1494-42f6-91c9-98adfa7c85ad)
+![image](https://github.com/user-attachments/assets/4a610ab2-05ae-49b1-8256-5e894cfa8a6e)
+
 
 #### Aufgabe 3
 -- Erstellen der Datenbank
